@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Graphite 0.9.12 - Carbon Cache Upstart
-date: '2014-01-16 23:31:26 -0800'
-date_gmt: '2014-01-17 07:31:26 -0800'
+description: "A working method of using upstart with graphite carbon agent"
 categories:
 - Administration
 tags:
@@ -16,7 +13,6 @@ tags:
 - upstart
 - daemons
 - process management
-comments: true
 ---
 <p>While implementing graphite I found many examples of upstart scripts for the carbon cache agents. However, each of those examples failed to work on a system using upstart version 0.6.5.  Most of them would start carbon up, then lose the pid and in turn lose the ability to stop and restart the process. I wanted upstart to start, restart and stop carbon cache agent processes, so I ended using the --debug option. (maybe that's a hack, but it does work)</p>
 <p>Below is a working upstart script for starting, restarting and stopping carbon cache.</p>

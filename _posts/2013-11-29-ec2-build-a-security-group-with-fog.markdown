@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: EC2 - Build a security group with fog
-date: '2013-11-29 08:01:26 -0800'
-date_gmt: '2013-11-29 16:01:26 -0800'
+description: "How to build a security group in Amazon with fog gem"
 categories:
 - Development
 - Administration
@@ -18,9 +15,9 @@ tags:
 - cidr
 - ports
 - protocols
-comments: true
 ---
 <p>There are not many examples for the ruby gem fog, what I use is the rdoc pages for the information about the fog API.  Usually that works for me, but sometimes there is trial and error, which takes time.  I've been making these short posts about different things you can do with fog so that it helps someone else down the line.</p>
+
 <p>For this post you'll learn how to make a EC2 security group and then authorize Amazon ELBs and an IP address range.</p>
 
 {% highlight ruby %}

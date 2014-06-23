@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sinatra Accept and Content Type"
-description: ""
+description: "Quick post on why Sinatra needs to do better with version and accept headers"
 category:
   - Development
 tags:

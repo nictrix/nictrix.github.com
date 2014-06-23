@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Route53 - Create records using fog
-date: '2013-12-12 23:43:34 -0800'
-date_gmt: '2013-12-13 07:43:34 -0800'
+description: "How to use fog gem with Route53"
 categories:
 - Administration
 tags:
@@ -17,7 +14,6 @@ tags:
 - zone
 - a record
 - ipv4
-comments: true
 ---
 <p>As you can tell from my posts I use fog a lot and it works well in most situations.  Here's another one, I want to load up a hosted zone and create a record for my EC2 machine:</p>
 

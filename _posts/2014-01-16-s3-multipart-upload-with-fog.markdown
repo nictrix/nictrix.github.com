@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: S3 - Multipart upload with fog
-date: '2014-01-16 23:51:06 -0800'
-date_gmt: '2014-01-17 07:51:06 -0800'
+description: "How to do a proper multipart upload with fog gem"
 categories:
 - Development
 tags:
@@ -17,7 +14,6 @@ tags:
 - ETag
 - md5sum
 - threads
-comments: true
 ---
 <p>I needed to understand multipart uploads with fog and how to keep the ETag MD5sum the same with multipart or single stream uploads to S3.  In the end it was very embarrassing for Amazon to not have the ETag working the same for both.  I understand the fact that both had a different route on getting to S3, but in the end 1 file is created meaning 1 ETag algorithm should be used.</p>
 <p>The basics is to do the multipart upload, then overwrite the file with itself, S3 will then give you the proper md5sum under the ETag value.  Below is the code to do the upload then copy the file to itself with a normalized ETag.</p>

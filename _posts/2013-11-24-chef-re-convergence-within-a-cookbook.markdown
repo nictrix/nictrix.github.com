@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Chef Re-convergence within a cookbook
-date: '2013-11-24 00:00:10 -0800'
-date_gmt: '2013-11-24 08:00:10 -0800'
+description: "How to hack Chef to re-converge during a Chef run"
 categories:
 - Administration
 tags:
@@ -16,7 +13,6 @@ tags:
 - application deployment
 - opscode
 - reconvergence
-comments: true
 ---
 <p>I've been using Chef for many years now and just figured out through some searching and troubleshooting how to reconverge a node during a Chef run.  What I mean by this, is to allow the Chef run to converge like usual, then ask it later on in the recipe to converge again before finishing out the rest of the cookbook.</p>
 <p>The one example I used for this method is I needed to download a remote file and that remote file had my application's version in it.  I couldn't assign it to attributes or to a ruby variable.  Both would have been converged before I downloaded the file.  So I needed a way to reconverge, download the file, set the attribute and continue on.  Below is the code to do just that:</p>

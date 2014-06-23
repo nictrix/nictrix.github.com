@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Linux - when you don't need a proxy
-date: '2013-11-23 23:38:34 -0800'
-date_gmt: '2013-11-24 07:38:34 -0800'
+description: "Simple NAT routing with ipTables, when to not use apache or nginx"
 categories:
 - Administration
 tags:

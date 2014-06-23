@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: EC2 - Build a Linux server with fog
-date: '2013-11-24 21:05:33 -0800'
-date_gmt: '2013-11-25 05:05:33 -0800'
+description: "Using the fog gem to build a linux server on AWS EC2"
 categories:
 - Development
 - Administration
@@ -17,7 +14,6 @@ tags:
 - server
 - images
 - tags
-comments: true
 ---
 <p>I am writing up some quick details on how to build an Amazon Linux server via the ruby gem fog.  I know this is available in many places, but I've added the tagging/image ability too and I'll be iterating on knowledge down the line.</p>
 

@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Apache http whitelist multiple IP Addresses
-date: '2013-11-20 18:24:55 -0800'
-date_gmt: '2013-11-21 02:24:55 -0800'
+description: "Using a whitelist with apache and mod_rewrite"
 categories:
 - Administration
 tags:
@@ -13,7 +10,6 @@ tags:
 - whitelist
 - http
 - load balancer
-comments: true
 ---
 <p>Here's a way to whitelist as many IP addresses as you want, using Apache rewrite module.</p>
 <p>In the VirtualHost add this:</p>

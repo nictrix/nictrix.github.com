@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Cloudwatch - Build an alarm using fog
-date: '2013-11-29 08:21:56 -0800'
-date_gmt: '2013-11-29 16:21:56 -0800'
+description: "How to build a cloudwatch alarm with the fog gem"
 categories:
 - Development
 - Administration
@@ -14,7 +11,6 @@ tags:
 - cloudwatch
 - alarms
 - metrics
-comments: true
 ---
 <p>Building a cloudwatch alarm using the ruby gem fog took me a while to figure out.  It wasn't as clear cut as other fog methods.  Below you'll see how to create the metric and then build the alarm for that metric.</p>
 

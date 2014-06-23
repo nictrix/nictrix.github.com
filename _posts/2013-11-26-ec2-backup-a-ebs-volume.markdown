@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: EC2 - Backup a EBS volume
-date: '2013-11-26 23:56:42 -0800'
-date_gmt: '2013-11-27 07:56:42 -0800'
+description: "Using the fog gem to backup an EBS volume"
 categories:
 - Development
 - Administration
@@ -15,7 +12,6 @@ tags:
 - snapshots
 - volumes
 - backup
-comments: true
 ---
 <p>This is a quick write up on how to backup an EBS volume using the ruby gem fog.  Not only will it request a snapshot, but it will tag the snapshot for historical and audit purposes.</p>
 

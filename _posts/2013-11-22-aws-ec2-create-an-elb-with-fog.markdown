@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: AWS EC2 - Create an ELB with Fog
-date: '2013-11-22 21:34:21 -0800'
-date_gmt: '2013-11-23 05:34:21 -0800'
+description: "Building an Elastic Load Balancer with the fog gem"
 categories:
 - Development
 - Administration
@@ -16,7 +13,6 @@ tags:
 - elb
 - gem
 - ec2
-comments: true
 ---
 <p>I like to post things that are helpful and not highly documented.  Here is an example of building out ELBs via the ruby gem fog:</p>
 

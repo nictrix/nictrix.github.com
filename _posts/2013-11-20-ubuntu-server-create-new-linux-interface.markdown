@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Ubuntu Server Create New Linux Interface
-date: '2013-11-20 19:00:14 -0800'
-date_gmt: '2013-11-21 03:00:14 -0800'
+description: "How to add a Linux interface to Ubuntu"
 categories:
 - Administration
 tags:
@@ -15,7 +12,6 @@ tags:
 - network
 - lshw
 - interface
-comments: true
 ---
 <p>If you just added a new interface to your Ubuntu server, you'll want to find this interface and give it an IP address.  Below are the steps to find it and add a static IP:</p>
 

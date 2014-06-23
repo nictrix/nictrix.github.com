@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Javascript - How to create a sortable list
-date: '2013-12-08 15:55:58 -0800'
-date_gmt: '2013-12-08 23:55:58 -0800'
+description: "Sortable lists in javascript"
 categories:
 - Development
 tags:
@@ -14,7 +11,6 @@ tags:
 - sortable
 - list
 - html
-comments: true
 ---
 <p>I needed to create a sortable list within a webpage that also made sure it updated the order of that list via the id of the form input.  Below is the javascript and html page and this is the <a href="http://jsfiddle.net/nictrix/AbAtJ/3/" title="jsfiddle">jsfiddle</a> showing how it works.</p>
 <p>Here is the html:</p>

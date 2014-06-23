@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Quick EBS LVM Setup
-date: '2013-11-18 00:57:25 -0800'
-date_gmt: '2013-11-18 08:57:25 -0800'
+description: "LVM and EBS"
 categories:
   - Administration
 tags:
@@ -12,7 +9,6 @@ tags:
 - ebs
 - lvm
 - bash
-comments: true
 ---
 <p>Just a quick note on how to setup EBS in EC2 with LVM</p>
 

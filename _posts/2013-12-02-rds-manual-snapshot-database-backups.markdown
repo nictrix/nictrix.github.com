@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: RDS - Manual Snapshot database backups
-date: '2013-12-02 21:27:17 -0800'
-date_gmt: '2013-12-03 05:27:17 -0800'
+description: "How to use the fog gem with RDS and manual backups"
 categories:
 - Administration
 tags:
@@ -17,7 +14,6 @@ tags:
 - database
 - db
 - backups
-comments: true
 ---
 <p>I've already posted how to use the ruby gem fog to create an RDS instance, now I will post how to create a manual snapshot of an RDS instance, in case once per day is not good enough.  Below you'll find the code to do just that.</p>
 

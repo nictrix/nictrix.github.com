@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Linux - PAM with LDAP
-date: '2013-11-27 23:33:55 -0800'
-date_gmt: '2013-11-28 07:33:55 -0800'
+description: "PAM with LDAP with proper functioning gids and uids"
 categories:
 - Administration
 tags:
@@ -18,7 +15,6 @@ tags:
 - kerberos
 - authentication
 - nsswitch
-comments: true
 ---
 <p>I researched pam and ldap authentication setups for a long time and have found how to do it properly.  When I say properly I mean your Linux user account get's the same uid and gid for every server connected to the same Active Directory infrastructure.</p>
 <p>The documents/discussions don't just come out and say it.  I tested this for a while and below is how you can setup PAM with LDAP and keep the same uid and gid on each Linux server.</p>

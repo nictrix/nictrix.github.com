@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: AWS S3 - Fog Stream Download and Upload
-date: '2013-11-21 21:05:32 -0800'
-date_gmt: '2013-11-22 05:05:32 -0800'
+description: "How to stream your download and uploads with the fog gem and S3"
 categories:
 - Development
 - Administration
@@ -17,7 +14,6 @@ tags:
 - download
 - upload
 - stream
-comments: true
 ---
 <p>I couldn't find an exact example of streaming a file download from S3 to a local file with the ruby gem fog, so I'm posting one up here.  Below is code to connect to S3, download a file and also check the MD5 matches.</p>
 

@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Ruby - rbnacl - crypto library uses
-date: '2013-12-08 16:58:00 -0800'
-date_gmt: '2013-12-09 00:58:00 -0800'
+description: "My uses of the rbnacl gem"
 categories:
 - Development
 tags:
@@ -20,7 +17,6 @@ tags:
 - public
 - keys
 - base64
-comments: true
 ---
 <p>I stumbled upon a really interesting Ruby Cryptography library that uses NaCl library, but I won't explain it here; just go to the <a href="https://github.com/cryptosphere/rbnacl" title="Github page">Github page</a> for more details.</p>
 <p>I decided to use it for mutual authentication, which has been done, but with different mathematical algorithms.  RbNaCl does this by using private and public keys between 2 things like people, client/server, etc...  Below I will show how to create a client key and a server key then decrypt a message from the client to the server.</p>

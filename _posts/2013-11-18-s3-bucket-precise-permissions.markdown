@@ -1,16 +1,12 @@
 ---
 layout: post
-status: publish
-published: true
 title: S3 Bucket - Precise Permissions
-date: '2013-11-18 22:54:34 -0800'
-date_gmt: '2013-11-19 06:54:34 -0800'
+description: "Proper permissions for an S3 user and it's bucket"
 categories:
   - Administration
 tags:
 - aws
 - s3
-comments: true
 ---
 <p>Found a way to give precise permissions to prefixes underneath the main bucket.  Create an IAM account, then assign this policy below.  Now you can safety know that the IAM account will only be able to access items underneath the prefix development/, in the my_main_bucket.</p>
 

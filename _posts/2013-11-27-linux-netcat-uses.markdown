@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Linux - Netcat uses
-date: '2013-11-27 23:50:37 -0800'
-date_gmt: '2013-11-28 07:50:37 -0800'
+description: "Simple netcat uses"
 categories:
 - Administration
 tags:
@@ -17,10 +14,11 @@ tags:
 - ssh
 - smtp
 - session view
-comments: true
 ---
 <p>I always run into new ways of using netcat as a resource for just about anything, from SSH proxies to creating scripts that do more because of the API to the network layer.</p>
+
 <p>One thing that I thought was really cool was serving up a quick file on your computer to someone else.  Most will transfer it via email, messenger or another tool; however sometimes those tools are not available or your transferring it between servers and only interacting with your sessions on both servers.</p>
+
 <p>Well if one server can access another server on a specific port or someone can hit your desktop on port 80 from their web browser than this one liner will really help you out.</p>
 
 {% highlight bash %}

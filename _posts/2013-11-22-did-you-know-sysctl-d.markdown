@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Did you know? Sysctl.d
-date: '2013-11-22 21:45:02 -0800'
-date_gmt: '2013-11-23 05:45:02 -0800'
+description: "Sysctl and it's undocumented initializing of sysctl.d/"
 categories:
 - Administration
 tags:
@@ -15,7 +12,6 @@ tags:
 - centos
 - fedora
 - amazon linux
-comments: true
 ---
 <p>Maybe I'll start making small posts like this, where I did a quick write up about a particular technology...we'll see how it works out...</p>
 <p>Did you know that by default in RHEL, CentOS, Fedora, Amazon Linux that sysctl automatically evaluates files in /etc/sysctl.d - I found this out only after reading the <a href="https://bugzilla.redhat.com/show_bug.cgi?id=593211">bug report</a>.</p>

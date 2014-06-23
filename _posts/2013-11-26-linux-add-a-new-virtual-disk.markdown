@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Linux - Add a new virtual disk
-date: '2013-11-26 23:47:29 -0800'
-date_gmt: '2013-11-27 07:47:29 -0800'
+description: "Adding a disk from VMware and possibly other systems"
 categories:
 - Administration
 tags:
@@ -16,7 +13,6 @@ tags:
 - mount
 - disk
 - extend
-comments: true
 ---
 <p>I've used this code below to add a new virtual disk to a VMWare virtual server running Ubuntu.</p>
 

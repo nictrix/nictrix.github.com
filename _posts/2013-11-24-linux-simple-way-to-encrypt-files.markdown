@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Linux - Simple way to encrypt files
-date: '2013-11-24 22:11:51 -0800'
-date_gmt: '2013-11-25 06:11:51 -0800'
+description: "How to encrypt a file with symmetric key"
 categories:
 - Administration
 tags:
@@ -19,7 +16,6 @@ tags:
 - public key
 - encryption
 - decryption
-comments: true
 ---
 <p>I found out an easy way to encrypt files on your Linux server, without encrypting the whole drive or using a program to do that work for you.  All you need to do is make an asymmetric rsa private key (keep this secure) and then a symmetric key during the session to encrypt a file.</p>
 

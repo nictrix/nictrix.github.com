@@ -1,10 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Linux - A better sudoers file
-date: '2013-11-30 21:42:36 -0800'
-date_gmt: '2013-12-01 05:42:36 -0800'
+description: "Great Sudoers files could exist!"
 categories:
 - Administration
 tags:
@@ -18,11 +15,13 @@ tags:
 - root
 - administration
 - systems
-comments: true
 ---
 <p>In the massive amount of Linux systems I've seen over the years not a single one of them had a great sudoers file.  Some were doing command line restrictions for one or two accounts, others were doing nothing more than allowing people to sudo straight to root and some had LDAP integration that gave certain groups permissions.  But with each one of these the groups/users that had sudo was a very generic group of administrators that may or may not know Linux very well.  That was the choice of the managers and directors, which I understand is a very low level item to put time into.  However, their time would be well worth the effort of securing authorization from a security, compliance and keep your job type of situation.</p>
+
 <p>I've known how to use sudo and sudoers file for a long time, but I decided to do a ton of research on sudo and how the sudoers file really works specifically the commands assigned to users and how to restrict users to those commands.  Then I also did research on how to become root without the privileges, from vim breakouts to creating substitute files that give you root.  With this I was able to create a sudoers file that I believe is very secure, but flexible enough to give the necessary access to users of the system.</p>
+
 <p>These types of systems were usually multiple users accessing root privileges, not a VPS or single user access.  And it would be multiple team roles like; developers, administrators, release engineers and database administrators.</p>
+
 <p>Below is a simple example of a sudoers file, without any extra privileges, but with restricted shells and a couple other things.</p>
 
 {% highlight bash %}
@@ -50,6 +49,7 @@ root ALL = (ALL) ALL
 {% endhighlight %}
 
 <p>To explain the above sudoers file...</p>
+
 <ul>
 <li>You'll see a couple Cmnd_Alias directives, these list out files that could be compromised to allow a person to become root if they were run with the sudo command.</li>
 <li>Then we add environmental variables that we allow in when someone does a sudo.</li>
@@ -58,7 +58,7 @@ root ALL = (ALL) ALL
 </ul>
 <p>It's not a matter of trust, it's a matter of doing things correctly and the same.  Too many times I've seen it where people expect to have full sudo rights because they don't know how to do something without sudo. Ask a systems administrator to do things with sudo in front of it without being root, it's a very different shell world when they start to do that. (or at least try)</p>
 <p>And when they start to put sudo in front of their commands they begin to respect the abilities of sudo, root and authorization to the Linux system.  And they can also design systems or commands a bit differently, which is a good thing in my opinion.</p>
-<p> **NOTE** it does matter where you put things in a sudoers file so beware of that.</p>
+<p> <b>**NOTE</b> it does matter where you put things in a sudoers file so beware of that.</p>
 <p>Okay now that we'e gotten a basic sudoers file out of the way, let's create a sudoers file that makes it so a systems administrator can run sudo as themselves and we can capture those commands for audits and such.</p>
 
 {% highlight bash %}

@@ -3,8 +3,7 @@ layout: post
 status: publish
 published: true
 title: AWS RDS - Using Fog to create a database instance
-date: '2013-11-21 21:59:46 -0800'
-date_gmt: '2013-11-22 05:59:46 -0800'
+description: "Create an RDS instance with the fog gem"
 categories:
 - Development
 - Administration
@@ -15,7 +14,6 @@ tags:
 - amazon
 - rds
 - mysql
-comments: true
 ---
 <p>Wanted to do a quick write up on how to create a mySQL RDS instance at Amazon with the ruby gem fog.</p>
 
