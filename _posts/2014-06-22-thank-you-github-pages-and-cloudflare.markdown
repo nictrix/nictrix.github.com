@@ -50,8 +50,7 @@ tags:
   I use a free pingdom account to monitor my blog and after moving it I checked the account and to my surprise I had a <b>633% decrease in response time</b>,  it went from 950 ms to 150 ms.
   <br>
 
-  <!-- {% thumbnail public/blog.nictrix.net_Response_Time_Reports.png 50x50< %} -->
-  <img src='public/blog.nictrix.net_Response_Time_Reports_50x50.png'>
+  <img src='public/blog.nictrix.net_Response_Time_Reports-700x700.png'>
 </p>
 
 <p>
