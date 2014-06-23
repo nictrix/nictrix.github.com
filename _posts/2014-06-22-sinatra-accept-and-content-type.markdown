@@ -29,5 +29,5 @@ I found it a bit difficult to find Sinatra's proper way of gathering data from H
 {% endhighlight %}
 
 <p>
-  Those are much easier to understand and user since they appear to be in the request object itself, most likely coming from rack itself and Sinatra is just making it easier on us.  There should be an easier way to gather the version requested in sinatra as that seems to be the most used standard.
+  Those are much easier to understand and use since they appear to be in the request object itself, most likely coming from rack itself and Sinatra is just making it easier on us.  There should be an easier way to gather the version requested in sinatra as that seems to be the most used standard.
 </p>
