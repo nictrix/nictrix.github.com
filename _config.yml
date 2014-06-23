@@ -10,10 +10,9 @@ url: http://blog.nictrix.net
 
 author:
   name: 'Nick Willever'
-  url: http://twitter.com/mdo
 
 paginate: 5
 paginate_path: "page/:num"
 
 github:
-  repo: https://github.com/nictrix/blog.nictrix.github.com
+  repo: https://github.com/nictrix/nictrix.github.com
