@@ -58,7 +58,7 @@ task :thumbnails do
     f.each_line do |line|
       next if line !~ /img src=/i
 
-      clean_line = line.gsub(/.*='/,'').gsub(/'>/,'')
+      clean_line = line.gsub(/.*='\//,'').gsub(/'>/,'')
       source = "#{clean_line.split('-').first}.#{clean_line.split('-').last.gsub(/.*\./,'')}".strip
       dimensions = clean_line.split('-').last.gsub(/\..*/,'').strip
 
