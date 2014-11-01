@@ -17,5 +17,5 @@ tags:
 </p>
 
 <p>
-  Check the Cloudflare blog for more details: https://blog.cloudflare.com/the-little-extra-that-comes-with-universal-ssl/
+  Check the Cloudflare blog for more details: <a href="https://blog.cloudflare.com/the-little-extra-that-comes-with-universal-ssl/">https://blog.cloudflare.com/the-little-extra-that-comes-with-universal-ssl/</a>
 </p>
