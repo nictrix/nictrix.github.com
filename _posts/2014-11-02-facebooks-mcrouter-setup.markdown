@@ -28,7 +28,7 @@ tags:
   RHEL/CentOS/Fedora:
 
   {% highlight bash %}
-  yum install gnutls-utils`
+  yum install gnutls-utils
   {% endhighlight %}
 
   Debian/Ubuntu:
@@ -40,7 +40,7 @@ tags:
 
 <p>
   <b>Create your CA private key and certificate (public key)</b>
-
+  <br><br>
   CA Private Key:
 
   {% highlight bash %}
@@ -71,7 +71,7 @@ tags:
 
 <p>
   <b>Create your servers private key, csr and certificate</b>
-
+  <br><br>
   Private Key:
   {% highlight bash %}
   certtool --generate-privkey --outfile my_server_private_key.pem
@@ -109,7 +109,7 @@ tags:
   IP.2 = <inbound ip address>
   {% endhighlight %}
 
-  <i>Make sure to update `IP.2` with the IP address the server will be connecting with.  You can add more too; IP.3, IP.4, etc...</i>
+  <i>Make sure to update <b>IP.2</b> with the IP address the server will be connecting with.  You can add more too; IP.3, IP.4, etc...</i>
 
   CSR:
 
