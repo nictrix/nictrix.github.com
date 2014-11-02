@@ -78,7 +78,7 @@ tags:
   {% endhighlight %}
 
   For the CSR it needs to be a SAN certificate, for that you need to create a configuration file (my_server_csr_san_config) to send with the command (change the country, state, locality, organization as you see fit):
-
+  <br><br>
   {% highlight bash %}
   [req]
   default_bits = 2048
@@ -110,7 +110,7 @@ tags:
   {% endhighlight %}
 
   <i>Make sure to update <b>IP.2</b> with the IP address the server will be connecting with.  You can add more too; IP.3, IP.4, etc...</i>
-
+  <br><br>
   CSR:
 
   {% highlight bash %}
