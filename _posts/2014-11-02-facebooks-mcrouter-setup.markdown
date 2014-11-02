@@ -11,7 +11,7 @@ tags:
   - linux
 ---
 <p>
-  Facebook released Mcrouter back on <a href="https://code.facebook.com/posts/296442737213493/introducing-mcrouter-a-memcached-protocol-router-for-scaling-memcached-deployments/">September 15th</a>, they went through what it does and how it helps Facebook and other companies. Most of the documentation is on the <a href="https://github.com/facebook/mcrouter/wiki">Github wiki page</a>, which has different types of setups,command line options and different supported features.  It's a really great tool when you have a ton of clients connecting to your cache layer and need to route them appropriately.
+  Facebook released Mcrouter back on <a href="https://code.facebook.com/posts/296442737213493/introducing-mcrouter-a-memcached-protocol-router-for-scaling-memcached-deployments/">September 15th</a>, they went through what it does and how it helps Facebook and other companies. Most of the documentation is on the <a href="https://github.com/facebook/mcrouter/wiki">Github wiki page</a>, which has different types of setups, command line options and different supported features.  It's a really great tool when you have a ton of clients connecting to your cache layer and need to route them appropriately.
 </p>
 
 <p>
@@ -23,8 +23,8 @@ tags:
 </p>
 
 <p>
-  Install the necessary dependencies:
-
+  <b>Install the necessary dependencies</b>
+  <br><br>
   RHEL/CentOS/Fedora:
 
   {% highlight bash %}
@@ -39,7 +39,7 @@ tags:
 </p>
 
 <p>
-  Create your CA private key and certificate (public key):
+  <b>Create your CA private key and certificate (public key)</b>
 
   CA Private Key:
 
@@ -53,7 +53,7 @@ tags:
   certtool --generate-self-signed --load-privkey ca-key.pem --outfile ca.crt
   {% endhighlight %}
 
-  Answer all questions as default (press enter) except the ones below:
+  <i>Answer all questions as default (press enter) except the ones below:</i>
 
   {% highlight bash %}
   Does the certificate belong to an authority? Y
@@ -70,7 +70,7 @@ tags:
 </p>
 
 <p>
-  Create your servers private key, csr and certificate
+  <b>Create your servers private key, csr and certificate</b>
 
   Private Key:
   {% highlight bash %}
@@ -109,7 +109,7 @@ tags:
   IP.2 = <inbound ip address>
   {% endhighlight %}
 
-  <b>Make sure to update `IP.2` with the IP address the server will be connecting with.  You can add more too; IP.3, IP.4, etc...</b>
+  <i>Make sure to update `IP.2` with the IP address the server will be connecting with.  You can add more too; IP.3, IP.4, etc...</i>
 
   CSR:
 
@@ -125,7 +125,7 @@ tags:
 </p>
 
 <p>
-  Use in the command line:
+  <b>Use in the command line</b>
 
   {% highlight bash %}
   mcrouter --ssl-port 11433 --pem-cert-path=my_server.crt --pem-key-path=my_server_private_key.pem --pem-ca-path=ca.crt
