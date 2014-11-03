@@ -19,9 +19,14 @@
         {% endif %}
       {% endfor %}
 
+      <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search the Blog">
+        <ul id="resultsContainer"><br><br><br><br><br><br></ul>
+      </div>
+
       <li class="sidebar-nav-item"><a href="{{ site.github.repo }}">Fork the blog</a></li>
     </ul>
-
+    
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
